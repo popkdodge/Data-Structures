@@ -26,7 +26,11 @@ class Queue:
         self.storage.append(value)
 
     def dequeue(self):
-        pop(self.storage)
+        if len(self.storage) == 0:
+            return None
+        else:
+            self.storage.pop(0)
+
 
 '''
 from singly_linked_list import Node
@@ -69,4 +73,3 @@ class Queue:
             count +=1
             temp=temp.next
         return count
-    
