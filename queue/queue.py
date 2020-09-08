@@ -23,10 +23,11 @@ class Queue:
         return len(self.storage)
 
     def enqueue(self, value):
-        pass
+        self.storage.append(value)
 
     def dequeue(self):
-        pass
+        pop(self.storage)
+
 '''
 from singly_linked_list import Node
 class Queue:
